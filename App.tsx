@@ -1,4 +1,6 @@
 import React from "react";
+import 'intl';
+import 'intl/locale-data/jsonp/pt-BR'
 import { ThemeProvider } from "styled-components/native";
 import {
   useFonts,
@@ -7,14 +9,8 @@ import {
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
 import theme from "./src/global/styles/theme";
-import { Register } from "./src/screens/Register";
 import AppLoading from "expo-app-loading";
-import { WelcomePage } from "./src/screens/WelcomePage";
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { CPFPage } from "./src/screens/WelcomePage/CPFPage";
-import { Dashboard } from "./src/screens/Dashboard";
-import { CategorySelect } from "./src/screens/CategorySelect";
 import { AppRoutes } from "./src/routes/app.routes";
 
 export default function App() {
